@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MaCar Auto-Detailing — Gardzko</title>
+  <meta name="description" content="Demonstracyjna strona MaCar Auto-Detailing w Gardzku. Profesjonalna pielęgnacja samochodów.">
+  <style>
+    :root{
+      --bg:#0b0d10; --panel:#12161b; --text:#f4f6f8; --muted:#aab2bd;
+      --accent:#d7ff43; --line:#222831; --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:var(--max);margin:auto;padding:0 22px}
+    header{position:sticky;top:0;z-index:20;background:rgba(11,13,16,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:900;letter-spacing:.04em;font-size:1.15rem}
+    .brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:24px;align-items:center;color:#d7dbe0;font-size:.94rem}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:12px;background:var(--accent);color:#111;font-weight:800}
+    .btn.alt{background:transparent;color:var(--text);border:1px solid #3a414b}
+    .hero{min-height:76vh;display:grid;align-items:center;background:
+      linear-gradient(90deg,rgba(11,13,16,.96) 0%,rgba(11,13,16,.72) 48%,rgba(11,13,16,.25) 100%),
+      url('https://aquacarwashcafe.com.au/cdn/shop/files/vcorrect_inside.jpg?v=1662604773&width=1536') center/cover}
+    .hero-content{max-width:730px;padding:90px 0}
+    .eyebrow{color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}
+    h1{font-size:clamp(2.6rem,6vw,5.5rem);line-height:.98;margin:14px 0 22px;letter-spacing:-.05em}
+    .hero p{font-size:1.16rem;color:#d5d9de;max-width:610px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    section{padding:86px 0}
+    .section-head{max-width:760px;margin-bottom:34px}
+    h2{font-size:clamp(2rem,4vw,3.2rem);margin:0 0 12px;letter-spacing:-.035em}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:26px}
+    .card h3{margin-top:0}
+    .num{font-size:.8rem;color:var(--accent);font-weight:900;letter-spacing:.08em}
+    .showcase{display:grid;grid-template-columns:1.3fr .7fr;gap:18px}
+    .photo{min-height:360px;border-radius:22px;background-size:cover;background-position:center;border:1px solid var(--line)}
+    .photo.one{background-image:url('https://jbcarcoating.my/images/00_GG/home/slide-004.jpg')}
+    .photo.two{background-image:url('https://cdn.prod.website-files.com/69090217db5022fb28d86167/6952c42cc82025165f466f6d_DSC05462.jpg')}
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    .fact{padding:20px;border-top:1px solid var(--line)}
+    .fact strong{font-size:1.3rem;display:block}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+    .contact-box{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:28px}
+    .contact-box p{margin:10px 0}
+    .note{font-size:.82rem;color:#8e98a4;margin-top:20px}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:#9099a5;font-size:.9rem}
+    @media(max-width:800px){
+      .navlinks a:not(.btn){display:none}
+      .grid,.facts,.showcase,.contact{grid-template-columns:1fr}
+      .hero{min-height:70vh;background-position:58% center}
+      section{padding:62px 0}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">MaCar <span>Auto-Detailing</span></div>
+      <div class="navlinks">
+        <a href="#uslugi">Usługi</a>
+        <a href="#realizacje">Realizacje</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="btn" href="tel:+48694215635">Zadzwoń</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-content">
+        <div class="eyebrow">Strzelce Krajeńskie i okolice • dojazd do 30 km</div>
+        <h1>Blask, który robi różnicę.</h1>
+        <p>Detailing samochodowy w Strzelcach Krajeńskich i okolicy z możliwością dojazdu do klienta do 30 km. Wnętrze, lakier, lampy i kompleksowe przygotowanie auta.</p>
+        <div class="actions">
+          <a class="btn" href="tel:+48694215635">Zadzwoń: 694 215 635</a>
+          <a class="btn alt" href="#uslugi">Zobacz ofertę</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="uslugi">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Oferta</div>
+        <h2>Pielęgnacja auta bez półśrodków</h2>
+        <p class="muted">Zakres usług MaCar obejmuje pielęgnację wnętrza, lakieru i przygotowanie auta do sprzedaży — także z dojazdem do klienta w promieniu do 30 km.</p>
+      </div>
+      <div class="grid">
+        <div class="card"><div class="num">01</div><h3>Czyszczenie wnętrza</h3><p class="muted">Dokładne odświeżenie kabiny, plastików, szyb oraz trudno dostępnych miejsc.</p></div>
+        <div class="card"><div class="num">02</div><h3>Pranie tapicerki</h3><p class="muted">Pranie foteli, kanapy i materiałowych elementów wnętrza, aby przywrócić świeżość i czystość.</p></div>
+        <div class="card"><div class="num">03</div><h3>Renowacja lamp</h3><p class="muted">Odświeżenie zmatowiałych reflektorów, poprawa wyglądu auta i przejrzystości lamp.</p></div>
+        <div class="card"><div class="num">04</div><h3>Korekta lakieru</h3><p class="muted">Poprawa wyglądu lakieru poprzez redukcję zarysowań, zmatowień i przywrócenie głębi połysku.</p></div>
+        <div class="card"><div class="num">05</div><h3>Powłoka ceramiczna</h3><p class="muted">Zabezpieczenie lakieru i podkreślenie jego połysku dzięki trwałej warstwie ochronnej.</p></div>
+        <div class="card"><div class="num">06</div><h3>Przygotowanie auta pod sprzedaż</h3><p class="muted">Kompleksowe odświeżenie wyglądu samochodu, aby prezentował się jak najlepiej przed wystawieniem ogłoszenia.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="realizacje">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Efekt</div>
+        <h2>Samochód ma wyglądać tak dobrze, jak na to zasługuje</h2>
+        <p class="muted">Miejsce na prawdziwe zdjęcia realizacji MaCar. Na wersji demonstracyjnej wykorzystano zdjęcia poglądowe.</p>
+      </div>
+      <div class="showcase">
+        <div class="photo one"></div>
+        <div class="photo two"></div>
+      </div>
+      <div class="facts">
+        <div class="fact"><strong>5,0 ★</strong><span class="muted">ocena w wynikach lokalnych</span></div>
+        <div class="fact"><strong>Do 30 km</strong><span class="muted">dojazd do klienta ze Strzelec Krajeńskich</span></div>
+        <div class="fact"><strong>10:00–18:00</strong><span class="muted">godziny widoczne w profilu lokalnym</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <div class="wrap contact">
+      <div>
+        <div class="eyebrow">Kontakt</div>
+        <h2>Umów swoje auto</h2>
+        <p class="muted">Najprościej zadzwonić i ustalić zakres prac oraz dogodny termin.</p>
+      </div>
+      <div class="contact-box">
+        <h3>MaCar Auto-Detailing</h3>
+        <p>📍 Strzelce Krajeńskie i okolice — dojazd do 30 km</p>
+        <p>☎ <a href="tel:+48694215635">694 215 635</a></p>
+        <p>🕙 10:00–18:00</p>
+        <div class="actions">
+          <a class="btn" href="tel:+48694215635">Zadzwoń teraz</a>
+        </div>
+        <p class="note">Strona demonstracyjna przygotowana jako propozycja wyglądu nowej witryny. Przed oficjalną publikacją należy uzyskać zgodę firmy oraz podmienić zdjęcia poglądowe na materiały właściciela.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Projekt demonstracyjny • MaCar Auto-Detailing</div>
+</footer>
+</body>
+</html>
